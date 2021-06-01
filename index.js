@@ -2,6 +2,7 @@
 const discord = require("discord.js");
 const fetch = require("node-fetch");
 const Database = require("@replit/database");
+const stayOn = require("./server");
 
 
 //creating 
@@ -13,7 +14,7 @@ let APIKey = process.env.API;
 const listOfPosition = [];
 
 //league data
-const LEAGUE = ["epl", "laliga", "serie A", "ligue 1", "bungesliga"];
+const LEAGUE = ["epl", "laliga", "serie A", "ligue 1", "bundesliga"];
 const codeLeague = ["1204", "1399", "1269", "1221", "1229"];
 
 function getStanding(league) {
@@ -273,5 +274,5 @@ function finishObject() {
 }
 
 
-
+stayOn();
 client.login(process.env.TOKEN);
