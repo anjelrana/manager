@@ -205,8 +205,8 @@ client.on("message", msg => {
     TeamA : ${dataDistri[2]}
     members : ${dataDistri[0]}
     
-    TeamB : ${dataDistri[1]}
-    members : ${dataDistri[3]}`);
+    TeamB : ${dataDistri[3]}
+    members : ${dataDistri[1]}`);
 
     db.set("createTeam", false);
     msg.channel.send("no longer you can create teams");
